@@ -23,5 +23,12 @@ intergrated supervisory control sysytem
         this.mappings.put(ConveyorStateMutation.class,conveyorStateMutator);}
  - 。
 
-
-
+##### 3.IDEA插件
+ - https://plugins.jetbrains.com/plugin/4946-simpleumlce
+ - https://plugins.jetbrains.com/plugin/7017-plantuml-integration
+ - https://plugins.jetbrains.com/plugin/7179-maven-helper
+ - https://plugins.jetbrains.com/plugin/1800-database-navigator
+ - https://confluence.jetbrains.com/display/CONTEST/Database+Navigator
+ - https://plugins.jetbrains.com/plugin/7141-mongo-plugin
+ - https://plugins.jetbrains.com/plugin/7654-gsonformat
+ - https://plugins.jetbrains.com/plugin/4230-bashsupport
