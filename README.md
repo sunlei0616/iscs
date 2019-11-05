@@ -21,7 +21,7 @@ intergrated supervisory control sysytem
    public void setup() {
         this.mappings = Maps.newConcurrentMap();
         this.mappings.put(ConveyorStateMutation.class,conveyorStateMutator);}
- - 。
+ - StringUtils.replaceAll
 
 ##### 3.IDEA插件
  - https://plugins.jetbrains.com/plugin/4946-simpleumlce
