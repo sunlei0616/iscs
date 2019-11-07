@@ -21,7 +21,9 @@ intergrated supervisory control sysytem
    public void setup() {
         this.mappings = Maps.newConcurrentMap();
         this.mappings.put(ConveyorStateMutation.class,conveyorStateMutator);}
- - StringUtils.replaceAll
+ - StringUtils.replaceAll;
+ - DateUtils.truncate(new Date(), Calendar.DATE);零点时刻；
+ - implements InitializingBean，@Override public void afterPropertiesSet() throws Exception；
 
 ##### 3.IDEA插件
  - https://plugins.jetbrains.com/plugin/4946-simpleumlce
