@@ -24,7 +24,9 @@ intergrated supervisory control sysytem
  - StringUtils.replaceAll;
  - DateUtils.truncate(new Date(), Calendar.DATE);零点时刻；
  - implements InitializingBean，@Override public void afterPropertiesSet() throws Exception；
-
+ - Stopwatch  Spring计时器；
+ - public String toJson(){JSONObject jsonObject = new JSONObject;jsonObject.put("aa",aa)...;return jsonObject.toJSONObject;}；
+ - 函数式接口@FunctionalInterface；
 ##### 3.IDEA插件
  - https://plugins.jetbrains.com/plugin/4946-simpleumlce
  - https://plugins.jetbrains.com/plugin/7017-plantuml-integration
@@ -40,4 +42,5 @@ intergrated supervisory control sysytem
  - 渲染需要用ReactDOM.render;
  - 只要导入react.js和react-dom.js就可以是react工程；
  - React.createElement创建一个元素，里面参数有多种形式；
+ - this.props为渲染不同的文本，被调用时所有属性都会被传递过去；
  - 
