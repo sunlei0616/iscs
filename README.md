@@ -34,3 +34,10 @@ intergrated supervisory control sysytem
  - https://plugins.jetbrains.com/plugin/7141-mongo-plugin
  - https://plugins.jetbrains.com/plugin/7654-gsonformat
  - https://plugins.jetbrains.com/plugin/4230-bashsupport
+
+##### 4.REACT学习笔记
+ - 创建组件，需要class Child extends React.Compent{};
+ - 渲染需要用ReactDOM.render;
+ - 只要导入react.js和react-dom.js就可以是react工程；
+ - React.createElement创建一个元素，里面参数有多种形式；
+ - 
