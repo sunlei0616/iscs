@@ -44,3 +44,6 @@ intergrated supervisory control sysytem
  - React.createElement创建一个元素，里面参数有多种形式；
  - this.props为渲染不同的文本，被调用时所有属性都会被传递过去；
  - 
+##### 5.spring
+ - 配置selvet,入口核心类dispatcherServlet，方法为doDispatch;
+ - spring mvc对接tomcat入口为FrameWorkServlet,方法为service；
