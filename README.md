@@ -47,3 +47,12 @@ intergrated supervisory control sysytem
 ##### 5.spring
  - 配置selvet,入口核心类dispatcherServlet，方法为doDispatch;
  - spring mvc对接tomcat入口为FrameWorkServlet,方法为service；
+ 
+ ##### 6.解析xml
+ - 获取文件路径：this.getClass.getResource("/");
+ - 替换：String.replaceAll;
+ - 解析：new SAXBuilder;
+ - 解析结果获取节点：.getChildren
+
+##### 7.设计模式
+ - 观察者模式：一个变化，依赖他的对象变化都得到通知并被更新；即变化利用事件的方式：调用时new事件对象，通过注入applicationContext,方法为publishEvent创建一个事件；自定义事件，实现applicationEvent；创建监听类并实现applicationListener，监控可做出相应的动作；
