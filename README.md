@@ -57,4 +57,4 @@ intergrated supervisory control sysytem
 ##### 7.设计模式
  - 观察者模式：一个变化，依赖他的对象变化都得到通知并被更新；即变化利用事件的方式：调用时new事件对象，通过注入applicationContext,方法为publishEvent创建一个事件；自定义事件，实现applicationEvent；创建监听类并实现applicationListener，监控可做出相应的动作；也可以用smartApplicationListener可以关心事件后的执行顺序；可以随便产生事件，也可多个监听器；
  - 策略模式：一些列算法封装起来，他们可以相互替换，让算法独立于使用它的客户；具体方式：定义抽象类或接口，从而可以替换的是接口实现或子类；
- - spring特性：在类的结构函数中定义List<具体接口>，则默认将所有这个接口的实现类，放到这个List里面去，结构函数内可对List做for循环，放到Map中，可随时通过名字获取到对应的实现类；
+ - 组合模式：spring特性：在类的结构函数中定义List<具体接口>，则默认将所有这个接口的实现类，放到这个List里面去，结构函数内可对List做for循环，放到Map中，可随时通过名字获取到对应的实现类；
