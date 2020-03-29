@@ -3,16 +3,15 @@ intergrated supervisory control sysytem
 
 #### 积累：
 ##### 1.设计模式记录：
-  - 工厂模式为建立接口实现类，类似的类均实现接口类，再创建工厂类，根据不同参数返回具体类；
-  - 抽象工厂模式为建立抽象类，类似的类扩展抽象类，再创建工厂生产类，根据不同参数返回具体工厂实现的类；
-  - 单例模式为只能有一个实例，private static Singleton instance;  无论创建多次都仅有一个实例；
-  - 建造者模式为builder用于多参数创建时带来便利；
-  - 原型模式是创建一个实现了 Cloneable 接口的抽象类，通过同类型实现该抽象类；
-  - 适配器模式
-
-
-
-
+ - 工厂模式为建立接口实现类，类似的类均实现接口类，再创建工厂类，根据不同参数返回具体类；
+ - 抽象工厂模式为建立抽象类，类似的类扩展抽象类，再创建工厂生产类，根据不同参数返回具体工厂实现的类；
+ - 单例模式为只能有一个实例，private static Singleton instance;  无论创建多次都仅有一个实例；
+ - 建造者模式为builder用于多参数创建时带来便利；
+ - 原型模式是创建一个实现了 Cloneable 接口的抽象类，通过同类型实现该抽象类；
+ - 适配器模式
+ - 观察者模式：一个变化，依赖他的对象变化都得到通知并被更新；即变化利用事件的方式：调用时new事件对象，通过注入applicationContext,方法为publishEvent创建一个事件；自定义事件，实现applicationEvent；创建监听类并实现applicationListener，监控可做出相应的动作；也可以用smartApplicationListener可以关心事件后的执行顺序；可以随便产生事件，也可多个监听器；
+ - 策略模式：一些列算法封装起来，他们可以相互替换，让算法独立于使用它的客户；具体方式：定义抽象类或接口，从而可以替换的是接口实现或子类；
+ - 组合模式：spring特性：在类的结构函数中定义List<具体接口>，则默认将所有这个接口的实现类，放到这个List里面去，结构函数内可对List做for循环，放到Map中，可随时通过名字获取到对应的实现类；
 
 ##### 2.记录好的代码习惯：
  - public String toString() {return new Gson().toJson(this);}
@@ -54,7 +53,12 @@ intergrated supervisory control sysytem
  - 解析：new SAXBuilder;
  - 解析结果获取节点：.getChildren
 
-##### 7.设计模式
- - 观察者模式：一个变化，依赖他的对象变化都得到通知并被更新；即变化利用事件的方式：调用时new事件对象，通过注入applicationContext,方法为publishEvent创建一个事件；自定义事件，实现applicationEvent；创建监听类并实现applicationListener，监控可做出相应的动作；也可以用smartApplicationListener可以关心事件后的执行顺序；可以随便产生事件，也可多个监听器；
- - 策略模式：一些列算法封装起来，他们可以相互替换，让算法独立于使用它的客户；具体方式：定义抽象类或接口，从而可以替换的是接口实现或子类；
- - 组合模式：spring特性：在类的结构函数中定义List<具体接口>，则默认将所有这个接口的实现类，放到这个List里面去，结构函数内可对List做for循环，放到Map中，可随时通过名字获取到对应的实现类；
+##### 7.多线程
+ - 定义线程池：ExecutorService executorService = Executors.newThead...
+ - Runnable没有返回值，callable有返回值，可以实现线程之间的值传递；
+ - 放到线程池中执行，或者new Thead(<T).start()；
+ - 线程间排序或等在线程完成，方法：wait..notify;放队列排序；或者用lock;最好方法：J.U.C-并发包：JDK中java.util.concurrent，其中的LockSuport方法park和unpark;
+ - 线程的管理，避免产生一堆线程；
+ - 线程的安全，保障是安全的
+ - 线程中变量可见性：可定义volatile String state;
+ - 准备容器，把线程装起来：LinkBlockingQueue<Thead> que = new LinkBlockingQueue<Thead>();
