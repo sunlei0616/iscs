@@ -62,3 +62,12 @@ intergrated supervisory control sysytem
  - 线程的安全，保障是安全的
  - 线程中变量可见性：可定义volatile String state;
  - 准备容器，把线程装起来：LinkBlockingQueue<Thead> que = new LinkBlockingQueue<Thead>();
+ 
+ ##### 8.浏览链接
+  - 学习大全：https://github.com/Snailclimb/JavaGuide
+  - 面试问题：https://github.com/Snailclimb/JavaGuide/blob/master/docs/essential-content-for-interview/PreparingForInterview/%E7%BE%8E%E5%9B%A2%E9%9D%A2%E8%AF%95%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93.md
+  - spring boot 启动过程：https://blog.csdn.net/qq_36931982/article/details/84067529
+  - 面试问题：https://github.com/Snailclimb/JavaGuide/blob/master/docs/essential-content-for-interview/PreparingForInterview/%E7%BE%8E%E5%9B%A2%E9%9D%A2%E8%AF%95%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93.md
+  - 面试问题：https://github.com/Snailclimb/JavaGuide/blob/master/docs/essential-content-for-interview/PreparingForInterview/%E7%BE%8E%E5%9B%A2%E9%9D%A2%E8%AF%95%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93.md
+  - 面试问题：https://github.com/Snailclimb/JavaGuide/blob/master/docs/essential-content-for-interview/PreparingForInterview/%E7%BE%8E%E5%9B%A2%E9%9D%A2%E8%AF%95%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93.md
+  - Bean生命周期：https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247484865&amp;idx=2&amp;sn=178c6e64e6c12172e77efdd669eb86a7&source=41#wechat_redirect
